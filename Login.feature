@@ -12,7 +12,7 @@ Feature: Autenticación de usuarios - Login
   # ESCENARIOS POSITIVOS
   # -------------------------------
 
-  Scenario: Login exitoso con credenciales válidas
+  Scenario: Login exitoso con credenciales válidas y xxxxxxx
     Given existe un usuario válido con estado activo
     When el usuario ingresa un nombre de usuario válido
     And ingresa una contraseña válida

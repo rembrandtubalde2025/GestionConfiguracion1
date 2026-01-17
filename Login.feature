@@ -12,10 +12,11 @@ Feature: Autenticación de usuarios - Login
   # ESCENARIOS POSITIVOS
   # -------------------------------
 
-  Scenario: Login exitoso con credenciales válidas
+  Scenario: Login exitoso con credenciales válidas y 2da verificacion
     Given existe un usuario válido con estado activo
     When el usuario ingresa un nombre de usuario válido
     And ingresa una contraseña válida
+    And ingresa el codigo de doble factor
     And presiona el botón "Iniciar sesión"
     Then el sistema permite el acceso
     And redirige al dashboard principal
